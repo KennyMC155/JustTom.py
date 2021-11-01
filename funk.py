@@ -1,6 +1,12 @@
 def numbSearch(minN, maxN):
     return  (minN + maxN)//2
 
+def main_menu():
+    print("Enter number of game you want:")
+    print("1)  Guess number")
+    print("2)  Calculate something(+,-,/,*)")
+    print("3)  STOP the game  ")
+
 
 def searchingGame():
     print("Enter two numbers: the minimum number and maximum nuber")
@@ -32,6 +38,7 @@ def searchingGame():
 
 
 def mathematicOper():  
+    print("So,we are going to calculate something, I just need to knowe x,y and mathematic operation")
     result = 'None'
     print("Enter X")
     x = int(input())
@@ -55,4 +62,10 @@ def mathematicOper():
     else:
         operation = operation_by_operator[mathoper]
         result = operation(x, y)
-        return (result)
+        print (f"So the result will be {result}")
+          
+          
+          
+          
+          
+          
